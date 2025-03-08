@@ -2214,6 +2214,9 @@ btn("Lost Soul By JustTooni385", function()
 
 	addmode("q", {
 		idle = function()
+
+		t.setWalkSpeed(50)
+
 			velYchg()
 			Neck.C0=Lerp(Neck.C0,cfMul(cf(0,1,0),angles(-2.0943951023931953+0.3490658503988659*sin((sine+1)*100),0.3490658503988659*sin((sine+0.5)*50),3.141592653589793)),deltaTime) 
             RootJoint.C0=Lerp(RootJoint.C0,cfMul(cf(0,0.5-0.5*sin((sine+0.5)*2.5),0),angles(-0.6981317007977318,0,3.141592653589793)),deltaTime) 
