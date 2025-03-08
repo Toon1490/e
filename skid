@@ -2201,8 +2201,6 @@ btn("Lost Soul By JustTooni385", function()
 	})
 	addmode("e", {
 		idle = function()
-		    local rY, lY = raycastlegs()
-			
 			velYchg()
 			LeftShoulder.C0=Lerp(LeftShoulder.C0,cfMul(cf(-1.5,0.5+0.03*sin(sine*3.8),-0.5),angles(0.061086523819801536*sin((sine+0.5)*-3.8),0.08726646259971647,-0.061086523819801536+0.08726646259971647*sin(sine*-3.8))),deltaTime)
 			RootJoint.C0=Lerp(RootJoint.C0,cfMul(cf(0,0.05 * sin(sine*3.8),0),angles(-1.6057029118347832+0.026179938779914945*sin(sine*3.8),0,-3.4033920413889427)),deltaTime) 
@@ -2287,7 +2285,7 @@ btn("Lost Soul By JustTooni385", function()
 			--LeftArm,-0.5,0,0,4.5,170,10,-0.17777777777777778,9,0.5,0.1,-0.4444444444444444,9,-30,0,0,4.5,0,0,0,4.5,90,10,0,4.5,LeftLeg,-1,0,0,4.5,100,-60,0,4.5,-0.5,0.1,0.26666666666666666,4.5,-90,2,0,4.5,-0.5,0,0,4.5,90,0,0,4.5,Torso,0,0,0,4.5,-80,-2,0.17777777777777778,9,-0.5,0.5,0.17777777777777778,9,-0,-3,0,4.5,0,0,0,4.5,180,2,0,4.5,Head,0,0,0,4.5,-90,5,0,9,1,0.2,0,9,-0,5,0,4.5,0,0,0,4.5,180,-4,0,4.5,RightArm,0.5,0,0,4.5,170,10,-0.17777777777777778,9,0.5,0.1,-0.4444444444444444,9,30,0,0,4.5,0,0,0,4.5,-90,10,0,4.5,RightLeg,1,0,0,4.5,100,60,0,4.5,-0.5,0.1,-0.26666666666666666,4.5,90,2,0,4.5,-0.5,0,0,4.5,-90,0,0,4.5
 		end,
 	})
-	addmode(, {
+	addmode("o", {
 		idle = function()
 			local Ychg=velYchg()/20
 			local rY, lY = raycastlegs()
@@ -2516,7 +2514,6 @@ btn("Addict Recreation", function()
 	})
 	addmode("e", {
 		idle = function()
-		    local rY, lY = raycastlegs()
 			local Cfw, Crt = velchgbycfrvec()
 
 			LeftShoulder.C0 = Lerp(LeftShoulder.C0,cfMul(cf(-0.9, 0.4 + 0.1 * sin(sine * 2), 0.3 - 0.15 * sin(sine * 2)),angles(-1.0471975511965976 - 0.12217304763960307 * sin(sine * 2), -1.3962634015954636, -0.6981317007977318)),deltaTime) 
@@ -2843,8 +2840,6 @@ btn("nameless animations V6", function()
 	})
 	addmode("e", {
 		idle = function()
-		    local rY, lY = raycastlegs()
-
 			LeftShoulder.C0 = Lerp(LeftShoulder.C0,cfMul(cf(-0.9, 0.4 + 0.1 * sin(sine * 2), 0.3 - 0.15 * sin(sine * 2)),angles(-1.0471975511965976 - 0.12217304763960307 * sin(sine * 2), -1.3962634015954636, -0.6981317007977318)),deltaTime) 
 			RootJoint.C0 = Lerp(RootJoint.C0,cfMul(cf(0, -1.85 - 0.1 * sin((sine + 0.2) * 2), 0),angles(-1.3962634015954636 + 0.03490658503988659 * sin(sine * 2), -0.08726646259971647, 3.141592653589793)),deltaTime) 
 			RightShoulder.C0 = Lerp(RightShoulder.C0,cfMul(cf(1, 0.4 + 0.1 * sin(sine * 2), 0.2 - 0.15 * sin(sine * 2)),angles(0.6108652381980153 - 0.12217304763960307 * sin(sine * 2), 1.2217304763960306, -0.7853981633974483)),deltaTime) 
